@@ -1,0 +1,2 @@
+py -3.9 fast-downward.py --plan-file "C:\Users\Axl Van Alboom\Desktop\Test\2021_10_21_17_18_49\plan.txt"  --alias lama-first "C:\Users\Axl Van Alboom\Desktop\Test\2021_10_21_17_18_49\domain.pddl" "C:\Users\Axl Van Alboom\Desktop\Test\2021_10_21_17_18_49\problem.pddl"
+
