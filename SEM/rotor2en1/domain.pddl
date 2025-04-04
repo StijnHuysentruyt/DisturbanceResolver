@@ -1,15 +1,6 @@
 (define (domain hanoi)
-    (:requirements :strips :typing)
-
-(:types
-        a
-        b - a 
-    )
+    (:requirements :strips)
     (:predicates 
-
-        (addon ?x)
-        (toolwarehouse ?x)
-
         (cp ?x)
         (tray ?x)
         (rotorhousing ?x)

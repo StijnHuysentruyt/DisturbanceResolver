@@ -1,48 +1,39 @@
 (define (problem hanoi4)
   (:domain hanoi)
   (:objects 
-    peg1 
-    peg2 
-    peg3 
-    d1 
-    d2 
-    d3 
-    d4)
+    cp1
+    tray1 
+    rh
+    r2
+    r1
+
+    twh1
+
+
+
+  )
   (:init 
-    (smaller peg1 d1) 
-    (smaller peg1 d2) 
-    (smaller peg1 d3) 
-    (smaller peg1 d4)
-    (smaller peg2 d1)
-    (smaller peg2 d2) 
-    (smaller peg2 d3) 
-    (smaller peg2 d4)
-    (smaller peg3 d1) 
-    (smaller peg3 d2) 
-    (smaller peg3 d3) 
-    (smaller peg3 d4)
 
-    (smaller d2 d1) 
-    (smaller d3 d1) 
-    (smaller d3 d2) 
-    (smaller d4 d1)
-    (smaller d4 d2) 
-    (smaller d4 d3)
 
-    (clear peg2) 
-    (clear peg3) 
-    (clear d1)
+    (addon twh1)
+    (toolwarehouse twh1)
 
-    (on d4 peg1) 
-    (on d3 d4) 
-    (on d2 d3) 
-    (on d1 d2))
+    (cp cp1)
+    (tray tray1)
+    (rotorhousing rh)
+    (rotor2 r2)
+    (rotor1 r1)
+    (cnn cp1 tray1)
+    (cnn tray1 rh)
+    (cnn tray1 r2)
+    (cnn tray1 r1)
+  )
   
-  (:goal (
-    and 
-      (on d4 peg3) 
-      (on d3 d4) 
-      (on d2 d3) 
-      (on d1 d2)))
+  (:goal 
+    (and 
+      (cnn rh r2)
+      (cnn rh r1)
+    )
+  )
   
 )
